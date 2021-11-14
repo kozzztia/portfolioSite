@@ -8,7 +8,7 @@ body { background: #1f2833; font-size: 20px; font-family: 'Mulish', sans-serif; 
 
 .classWork { font-size: 36px; }
 
-.text { text-align: left; text-indent: 20px; }
+.text { text-align: left; text-indent: 20px; max-width: 400px; margin-left: auto; margin-right: auto; }
 
 .mainWrapper { max-width: 1600px; height: auto; margin: 0 auto; overflow: hidden; position: relative; }
 
@@ -21,6 +21,13 @@ body { background: #1f2833; font-size: 20px; font-family: 'Mulish', sans-serif; 
 .contentWrapper .content { position: relative; width: 100%; padding-top: 50px; border-right: solid 2px #45a29e; }
 
 .about { width: 100%; height: auto; display: flex; flex-direction: row; flex-wrap: wrap; }
+
+.about__txt h1 { margin-bottom: 10px; white-space: nowrap; }
+.about__txt h2 { white-space: nowrap; margin-bottom: 30px; }
+.about__txt .images { margin-bottom: 40px; }
+.about__txt p { margin-bottom: 10px; }
+
+.about__photo img { width: 400px; }
 
 @media (max-width: 700px) { .header { flex-direction: column; overflow: hidden; right: 0; height: 48px; }
   .header .btn__main { display: block; }

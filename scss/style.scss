@@ -30,6 +30,9 @@ body{
 .text{
     text-align: left;
     text-indent: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -92,10 +95,25 @@ body{
     flex-wrap: wrap;
 }
 .about__txt {
+    h1{
+        margin-bottom: 10px;
+        white-space: nowrap;
+    }h2{
+        white-space: nowrap;
+        margin-bottom: 30px;
+    }.images {
+        margin-bottom: 40px;
+    }p{
+        margin-bottom: 10px;
 
+    }
 }
-.images {
+.about__photo{
+    img{
+        width: 400px;
+    }
 }
+
 
 
 
