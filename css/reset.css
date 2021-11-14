@@ -7,3 +7,10 @@
       font: inherit;
       box-sizing: border-box;
 }
+a{
+text-decoration: none;
+color: #252525;
+}
+li{
+      list-style-type: none;
+}

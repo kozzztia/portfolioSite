@@ -4,27 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Road+Rage&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="shortcut icon" href="images/cup.png">
-    <title>NewProgect</title>
+    <title>HTML Deweloper</title>
 </head>
 <body>
-    <div class="div">
-        <label for="form">
-            <div class="monitor"></div>
-            <input class="input" type="range" min=0 max="10" value="1" step="1" name="range">
-            <h1>interesting test</h1>
-            <p class="text">  
-                input[type=range]::-webkit-slider-runnable-track {
-                padding-left: 20px;
-                padding-right: 20px;
-              }</p>
-        </label>
-    </div>
+    <main class="mainWrapper">
+        <header class="header box">
+            <button class='btn__biography btnForMain btn'>Біографія</button>
+            <button class='btn__work btnForMain btn'>Досвід роботи</button>
+            <button class='btn__information btnForMain btn'>Додаткова інформація</button>
+            <button class='btn__contacts btn'>Контакти</button>
+            <button class='btn__main btn'>Меню</button>
+        </header>
+        <section class="contentWrapper">
+            <div class="content__biography content">
+                <p>1Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error hic ipsum facilis officiis dicta magni doloribus ipsam nobis minima in voluptate ad rem deleniti reiciendis, cumque beatae earum atque incidunt. Temporibus, harum assumenda perferendis illo ut necessitatibus sed! Quia laudantium doloribus ex? Iure maiores recusandae explicabo. Sapiente illum dignissimos suscipit?</p>
+            </div>
+            <div class="content__work content">
+                <p>2Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error hic ipsum facilis officiis dicta magni doloribus ipsam nobis minima in voluptate ad rem deleniti reiciendis, cumque beatae earum atque incidunt. Temporibus, harum assumenda perferendis illo ut necessitatibus sed! Quia laudantium doloribus ex? Iure maiores recusandae explicabo. Sapiente illum dignissimos suscipit?</p>
+            </div>
+            <div class="content__information content">
+                <p>3Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error hic ipsum facilis officiis dicta magni doloribus ipsam nobis minima in voluptate ad rem deleniti reiciendis, cumque beatae earum atque incidunt. Temporibus, harum assumenda perferendis illo ut necessitatibus sed! Quia laudantium doloribus ex? Iure maiores recusandae explicabo. Sapiente illum dignissimos suscipit?</p>
+            </div>
+        </section>
+        <footer class="footer box">
 
+        </footer>
+    </main>
 
-    <!-- <script src="JavaScript/jquery-3.6.0.min.js"></script> -->
+    <script src="JavaScript/jquery-3.6.0.min.js"></script>
     <script src="JavaScript/script.js"></script>
 </body>
 </html>

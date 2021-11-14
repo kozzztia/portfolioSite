@@ -1,5 +1,10 @@
-.div { width: 500px; height: auto; background: #a2ffa9; margin: 20px auto; padding: 20px; text-align: center; }
-.div .monitor { width: 100px; height: 40px; background: #fff; margin: 20px auto; border: 1px solid #000; }
-.div input { width: 400px; appearance: none; border-radius: 10px; background: rgba(255, 255, 0, 0.371); }
-.div input[type=range]::-webkit-slider-runnable-track { border-radius: 10px/100%; height: 7px; border: 1px solid cyan; background-color: #fff; padding-left: 20px; padding-right: 20px; }
-.div input[type=range]::-webkit-slider-thumb { background: #ecf0f1; border: 1px solid #ff1e00; border-radius: 15px/100%; cursor: pointer; width: 15px; height: 15px; -webkit-appearance: none; margin-top: -4px; }
+body { background: #c5c6c7; font-size: 20px; font-family: 'Mulish', sans-serif; color: #0b0c10; }
+
+.mainWrapper { max-width: 1600px; height: 120vh; margin: 0 auto; overflow: hidden; }
+
+.header { font-family: 'Road Rage', cursive; display: flex; flex-direction: row; width: 100%; position: sticky; top: 0; z-index: 10; }
+.header .btn { padding: 10px; width: 20%; border-left: solid 1px #45a29e; border-right: solid 1px #45a29e; box-shadow: 0px 0px 5px #1f2833; transition: .5s; }
+.header .btn:hover { background: #66fcf1; box-shadow: 0px 0px 1px #1f2833; }
+
+.contentWrapper { position: relative; padding: 20px; width: 300%; background: #fff; display: flex; right: 0; }
+.contentWrapper content { position: relative; width: 100%; }

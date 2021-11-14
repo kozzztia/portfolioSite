@@ -1,22 +1,30 @@
-// $(document).ready(function(){
-    let num = document.querySelector('.input');
-    let monitor = document.querySelector('.monitor');
-    let text = document.querySelector('.text');
+$(document).ready(function(){
 
 
-  monitor.innerHTML= 'number ' + num.value;
-  num.oninput = function(){
-    monitor.innerHTML = 'number ' + this.value;
-    if(num.value == 10){
-      monitor.innerHTML = 'The end ';
-    }
-    text.style.fontSize = this.value*3 +'px';
-  }
+  // let btnMain = document.querySelectorAll('.btnForMain');
+  // let contentMain = document.querySelector('.contentWrapper')
+
+  // contentMain.style.right = "0";
 
 
-
-
-
-
-
+  // btnMain[0].addEventListener('click', function () {
+  //   contentMain.style.right = "0";
   // });
+  // btnMain[1].addEventListener('click', function () {
+  //   contentMain.style.right = "99.1%";
+  // });
+  // btnMain[2].addEventListener('click', function () {
+  //   contentMain.style.right = "198.1%";
+  // });
+
+
+  $('.btn__biography').click(function () {
+  $('.btn__biography').css('background','#66fcf1');
+
+
+  })
+
+
+
+
+  });

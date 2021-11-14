@@ -1,41 +1,69 @@
-.div{
-    width: 500px;
-    height: auto;
-    background: rgb(162, 255, 169);
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
-    .monitor{
-        width: 100px;
-        height: 40px;
-        background: #fff;
-        margin: 20px auto;
-        border: 1px solid #000;
-    }
-    input{
-        width: 400px;
-        appearance: none;
-        border-radius: 10px;
-        background: rgba(255, 255, 0, 0.371);
-    }
-    input[type=range]::-webkit-slider-runnable-track {
-        border-radius: 10px/100%;
-        height: 7px;
-        border: 1px solid cyan;
-        background-color: #fff;
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-      input[type=range]::-webkit-slider-thumb {
-        background: #ecf0f1;
-        border: 1px solid rgb(255, 30, 0);
-        border-radius:15px/100%;
-        cursor: pointer;
-        width:15px;
-        height: 15px;
-        -webkit-appearance: none;
-        margin-top: -4px;
 
-      }
-
+//const
+$colorFitch : #66fcf1;
+$colorFitch2 : #45a29e;
+$colorBG: #c5c6c7;
+$colorBG2: #1f2833;
+$colorTxt: #0b0c10;
+// blocks
+body{
+    background: $colorBG;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    color: $colorTxt; 
 }
+
+
+
+// 
+.mainWrapper{
+    max-width: 1600px;
+    height: 120vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header {
+    font-family: 'Road Rage', cursive;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .btn{
+        padding: 10px;
+        width: 20%;
+        border-left: solid 1px $colorFitch2;
+        border-right: solid 1px $colorFitch2;
+        box-shadow:0px 0px 5px $colorBG2;
+        transition: .5s;
+        &:hover{
+            background: $colorFitch;
+            box-shadow:0px 0px 1px $colorBG2;
+
+        }
+    }
+}
+.contentWrapper{
+    position: relative;
+    padding: 20px;
+    width: 300%;
+    background: #fff;
+    display: flex;
+    right: 0;
+    content{
+        position: relative;
+        width: 100%;
+    }
+    .content__biography{
+
+    }
+    .content__work{
+
+    }
+    .content__information{
+
+    }
+}
+
