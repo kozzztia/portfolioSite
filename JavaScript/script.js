@@ -19,10 +19,24 @@ $(document).ready(function(){
 
 
   $('.btn__biography').click(function () {
-  $('.btn__biography').css('background','#66fcf1');
-
-
+    $('.btn').css('background','#c5c6c7');
+      $(this).css('background','#66fcf1');
+      $('.contentWrapper').animate({'right' : '0'}),1000;
   })
+  $('.btn__work').click(function () {
+    $('.btn').css('background','#c5c6c7');
+      $(this).css('background','#66fcf1');
+      $('.contentWrapper').animate({'right' : '100%'}),1000;
+  })
+  $('.btn__information').click(function () {
+    $('.btn').css('background','#c5c6c7');
+      $(this).css('background','#66fcf1');
+      $('.contentWrapper').animate({'right' : '200%'}),1000;
+  })
+
+
+
+
 
 
 
