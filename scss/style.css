@@ -4,13 +4,13 @@ body { background: #1f2833; font-size: 20px; font-family: 'Mulish', sans-serif; 
 
 .icons { width: 70px; height: 70px; }
 
-.box { width: 50%; padding: 20px; text-align: center; }
+.box { width: 50%; padding: 20px; text-align: center; border-bottom: solid 1px #45a29e; }
 
-.container { width: 1000%; padding: 20px; }
+.container { width: 100%; padding: 20px; }
 
 .title { font-size: 40px; }
 
-.classWork { font-size: 36px; }
+.classWork { font-size: 34px; }
 
 .text { text-align: left; text-indent: 20px; max-width: 450px; margin-left: auto; margin-right: auto; }
 
@@ -26,18 +26,19 @@ body { background: #1f2833; font-size: 20px; font-family: 'Mulish', sans-serif; 
 
 .about { width: 100%; height: auto; display: flex; flex-direction: row; flex-wrap: wrap; }
 
-.about__txt h1 { margin-bottom: 10px; white-space: nowrap; }
-.about__txt h2 { white-space: nowrap; margin: 0 auto 30px auto; width: 350px; }
+.about__txt h2 { margin-bottom: 10px; white-space: nowrap; }
+.about__txt h1 { white-space: nowrap; margin: 0 auto 30px auto; width: 350px; }
 .about__txt .images { margin-bottom: 40px; }
 .about__txt p { margin-bottom: 10px; }
 
-.about__photo img { width: 450px; }
+.about__photo img { width: 450px; position: top; }
 
-.footer { height: auto; background: inherit; border-bottom: 1px solid #fff; }
+.footer { height: auto; background: #c5c6c7; border-bottom: 1px solid #fff; text-align: center; padding: 10px; position: relative; }
+.footer a { position: inherit; right: 0; bottom: 0; }
 
 .windowWrapper { background: #c5c6c7b6; height: 100vh; width: 100vw; position: fixed; z-index: 11; top: 0; }
-.windowWrapper .window { margin: 0; position: relative; height: 500px; max-width: 500px; background: #fff; top: 45%; left: 45%; transform: translate(-50%, -50%); }
-.windowWrapper .window .closeWindowBtn { font-weight: bold; width: 30px; height: 30px; border-radius: 50%; margin: 5px; position: relative; top: 10px; left: 90%; background: #ff3c36; }
+.windowWrapper .window { margin: 0; position: relative; height: 500px; max-width: 500px; background: #fff; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.windowWrapper .window .closeWindowBtn { font-weight: bold; width: 30px; height: 30px; border-radius: 50%; margin: 5px; position: relative; top: 6%; left: 85%; background: #ff3c36; }
 
 @media (max-width: 960px) { .about { flex-direction: column; }
   .box { width: 100%; margin: 0 auto; } }

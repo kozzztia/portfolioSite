@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 // main btn
   $('.btn').click(function () {
-    $('.header').animate({'height' : '50px'}, 200);
+    $('.header').animate({'height' : '48px'}, 200);
   })
   $('.btn__biography').click(function () {
     $('.btn').css('background','#c5c6c7');
