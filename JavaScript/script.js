@@ -17,7 +17,7 @@ $(document).ready(function(){
   //   contentMain.style.right = "198.1%";
   // });
 
-
+// main btn
   $('.btn__biography').click(function () {
     $('.btn').css('background','#c5c6c7');
       $(this).css('background','#66fcf1');
@@ -33,9 +33,20 @@ $(document).ready(function(){
       $(this).css('background','#66fcf1');
       $('.contentWrapper').animate({'right' : '200%'}),1000;
   })
+// window btn
+$('.windowWrapper').slideUp(100);
+  $('.btn__contacts').click(function(){
+    $('.windowWrapper').slideToggle(100);
+     })
+$('.closeWindowBtn').click(function(){
+  $('.windowWrapper').slideUp(100);
+})
+// burgerBtn
+$('.btn__main').click(function(){
+  $('.header').css({'height' : '250px'});
+  $('.btn__main').text('Закрити меню');
 
-
-
+})
 
 
 
