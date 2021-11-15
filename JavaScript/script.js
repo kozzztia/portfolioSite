@@ -18,6 +18,9 @@ $(document).ready(function(){
   // });
 
 // main btn
+  $('.btn').click(function () {
+    $('.header').animate({'height' : '50px'}, 200);
+  })
   $('.btn__biography').click(function () {
     $('.btn').css('background','#c5c6c7');
       $(this).css('background','#66fcf1');
@@ -34,18 +37,16 @@ $(document).ready(function(){
       $('.contentWrapper').animate({'right' : '200%'}),1000;
   })
 // window btn
-$('.windowWrapper').slideUp(100);
+$('.windowWrapper').slideUp(200);
   $('.btn__contacts').click(function(){
-    $('.windowWrapper').slideToggle(100);
+    $('.windowWrapper').slideToggle(200);
      })
 $('.closeWindowBtn').click(function(){
-  $('.windowWrapper').slideUp(100);
+  $('.windowWrapper').slideUp(200);
 })
 // burgerBtn
 $('.btn__main').click(function(){
-  $('.header').css({'height' : '250px'});
-  $('.btn__main').text('Закрити меню');
-
+  $('.header').animate({'height' : '250px'}, 200);
 })
 
 
